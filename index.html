@@ -15,50 +15,86 @@
 </head>
 <body class="mode-dark">
     <header>
-        <h1>
-            <span>&#127891;</span> Portfolio développeur frontlogo 
-            <button aria-label="light mode" class="light-mode">
+        <img src="./asset/Circle_Logo_NB.svg" alt="Logo Nicolas Berlaud">
+        <h3>
+            Portfolio
+        </h3>
+        <nav>
+            <ol>
+                <li class="league-H4">Homes</li>
+                <li class="league-H4">À propos de moi</li>
+                <li class="league-H4">Compétences</li>
+                <li class="league-H4">Projets</li>
+                <li class="league-H4">Contact</li>
+            </ol>
+        </nav>
+        <button aria-label="light mode" class="light-mode">
             <span class="material-symbols-outlined" aria-hidden="true">
                 wb_sunny
-                </span>
-            </button>
-        </h1>
+            </span>
+        </button>
     </header>
-
     <main>
+        {# Welcome #}
         <section>
-            <h2>Présentation</h2>
-            <p>
-                Je suis particulièrement sensible aux qualités graphiques, 
-                ergonomiques et d’organisation des contenus. Ainsi, 
-                j’utilise les concepts de la Programmation Orientée Objet pour faciliter 
-                l’interactivité, 
-                la modularité et la mise à jour des applicatifs. 
-                Je suis spécialisé également dans l’Accessibilité web : 
-                Schema.org, RDFa, micro-données, WCAG & SEO
-            </p>
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <h3>Apprenez à me connaître</h3>
         </section>
-
+        {# About me #}
         <section>
-            <h3>
-                Langages &amp; Framework
-            </h3>
-            <ul class="gallery-primary-logo">
-                <li><img src="https://placehold.jp/150x150.png" alt="logo javscript" lodading="lazy"></li>
-                <li><img src="https://placehold.jp/150x150.png" alt="logo python" lodading="lazy"></li>
-                <li><img src="https://placehold.jp/150x150.png" alt="logo php" lodading="lazy"></li>
-                <li><img src="https://placehold.jp/150x150.png" alt="logo json" lodading="lazy"></li>
-                <li><img src="https://placehold.jp/150x150.png" alt="logo css" lodading="lazy"></li>
-                <li><img src="https://placehold.jp/150x150.png" alt="logo html" lodading="lazy"></li>
+            <h2>À propos de moi</h2>
+            <div>
+                <img src="./asset/identity_picture.png" alt="Photo Nicolas Berlaud"/>
+                <nav>
+                    <ol>
+                        <li>Étudiant</li>
+                        <li>Designer</li>
+                        <li>Developpeur</li>
+                    </ol>
+                </nav>
+                <p>
+                    Étudiant en programation de 21 ans.
+                </p>
+                <h3>Nicolas Berlaud</h3>
+            </div>
+            <ul>
+                {# TODO: Ajouter la classe qui permet des contours blanc #}
+                <li>
+                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
+                    <div>
+                        <img src="./asset/graduation-cap-solid.svg" alt="Graduation cap logo">
+                    </div>
+                    <h4>Education</h4>
+                    <p>École ITIC Paris</p>
+                    <p>BTS Services Informatiques aux Organisations</p>
+                    <p>Option SLAM</p>
+                </li>
+                {# TODO: Ajouter la classe qui permet des contours blanc #}
+                <li>
+                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
+                    <div>
+                        <img src="./asset/trophy-solid.svg" alt="Trophy logo">
+                    </div>
+                    <h4>Compétences</h4>
+                    <p>PHP, Java, HTML, CSS, Javascript, C et Design</p>
+                </li>
+                {# TODO: Ajouter la classe qui permet des contours blanc #}
+                <li>
+                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
+                    <div>
+                        <img src="./asset/briefcase-solid.svg" alt="Trophy logo">
+                    </div>
+                    <h4>Experience</h4>
+                    <p>Alternance à Gest On Line</p>
+                </li>
             </ul>
         </section>
-       
+        <section>
+            <h2>Compétences</h2>
+            
+        </section>
     </main>
-    <footer>
-        <p>
-            chargement...
-        </p>
-    </footer>
+    <footer></footer>
     <script src="./js/app.js"></script>
 </body>
 </html>
