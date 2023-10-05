@@ -1,2 +1,5 @@
-/node_modules/
+# Ignore src
 /src/
+# Ignore node_modules
+/node_modules/
+
