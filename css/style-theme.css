@@ -1,9 +1,11 @@
+/* RESET */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 html{
     font-size: 62.5%;
+    font-family: 'League Spartan', sans-serif;
+
 }
 body{
-    font: 1.6rem 'Roboto', sans-serif;
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
@@ -19,7 +21,6 @@ h1,h2,h3,p,ul,ol{
     list-style-type: none;
     font-weight: normal;
 }
-/* ajouter les images */
 a{
     text-decoration: none;
     color: #222;
@@ -28,68 +29,4 @@ button, input{
     padding: 0;
     background: none;
     border: 0;
-}
-:root{
-    color-scheme: light dark; 
-    --bgcolor-theme: #040404;
-    --text-color: #fff;
-}
-header h1{
-    font-family: 'rowdexregular';
-}
-
-body {
-    font: 1.6rem 'Roboto', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    letter-spacing:.1rem;
-    background-color: var(--bgcolor-theme);
-    color: var(--text-color);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}
-
-main {
-    max-width: 120rem;
-    margin: auto;
-}
-
-footer {
-    text-align: center;
-}
-
-.gallery-primary-logo{
-    padding: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-}
-
-.gallery-primary-logo img{
-    width: 100%;
-}
-
-section ul.gallery-primary-logo li{
-    clip-path: circle(40%);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    filter: drop-shadow(0 0 0.60rem rgb(224, 231, 123));
-}
-
-section ul.gallery-primary-logo li:hover{
-    clip-path: circle(45%);
-}
-
-header h1 {
-    text-align: center;
-    line-height: 7rem;
-    font-size: 8rem;
-    padding: 2rem 0;
-    /* exemple habillage de texte*/
-    text-shadow:#ff006e 2.5px 2.5px 0,
-    #8338ec 5px 5px 0,
-    #3a86ff 7.5px 7.5px 0,
-    #333 10px 10px 10px;color:#ffcc00;
-    background-color:#2E8ECE;
 }
