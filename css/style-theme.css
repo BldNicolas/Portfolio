@@ -94,3 +94,124 @@ main {
     padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
+/* SECTION */
+
+.main-section {
+    background: url(../asset/Background-welcome.png), lightgray 100% / cover no-repeat;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.block {
+    display: flex;
+    height: 100rem;
+    padding: 10rem 30rem;
+    border-radius: 5rem;
+    border: 0.5rem solid var(--dark-blue);
+    background: var(--blue); 
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 3rem; 
+    background-color: var(--dark-blue);
+}
+
+.title {
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border-radius: 1rem; 
+    background: var(--Blue, #2B4D69); 
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem; 
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.about-me-content {
+    display: flex;
+    width: 58.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.info-content {
+    display: flex;
+    padding: 1.6rem;
+    align-items: center;
+    gap: 1.6rem;
+    align-self: stretch;
+    border-radius: 0.6rem;
+    border: 0.1rem solid var(--white); 
+}
+
+.info-content-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px; 
+    background-color: var(--white);
+}
+
+.info-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    flex: 1 0 0;
+}
+
+.achievement-content-container {
+    display: flex;
+    height: 33.6rem;
+    padding: 2rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; 
+}
+
+.achievement-content {
+    display: flex;
+    width: 25rem;
+    padding: 1.2rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-self: stretch;
+    border-radius: 1.5rem;
+    border: 0.1rem solid var(--white);
+}
+
