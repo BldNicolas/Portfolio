@@ -59,12 +59,17 @@ button, input{
 /* HEADER */
 
 header {
-    position: sticky;
-    top: 0;
-    background-color: var(--dark-blue);
-    display : flex;
-    justify-content: space-around;
+    display: flex;
+    width: 192rem;
+    height: 8rem;
+    padding: 2rem;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
+    position: absolute;
+    border-radius: 10px;
+    border: 0.2rem solid var(--white);
+    background: var(--dark-blue);
 }
 
 .nav-menu {
