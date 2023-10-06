@@ -8,141 +8,131 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan&display=swap">
     <link rel="stylesheet" href="./font/stylesheet.css">
     <link rel="stylesheet" href="./css/style-theme.css">
     <title>Portfolio</title>
 </head>
 <body class="mode-dark">
-    <header>
-        <img src="./asset/Circle_Logo_NB.svg" alt="Logo Nicolas Berlaud">
-        <h3>
+    <header class="border-2-white border-radius-10">
+        <img class="logo-header flex-grow-1" src="./asset/Circle_Logo_NB.svg" alt="Logo Nicolas Berlaud">
+        <h3 class="flex-grow-3">
             Portfolio
         </h3>
-        <nav>
-            <ol>
-                <li class="league-H4">Homes</li>
-                <li class="league-H4">À propos de moi</li>
-                <li class="league-H4">Compétences</li>
-                <li class="league-H4">Projets</li>
-                <li class="league-H4">Contact</li>
+        <nav class="flex-grow-1">
+            <ol class="nav-menu">
+                <li><h4>Homes</h4></li>
+                <li><h4>À propos de moi</h4></li>
+                <li><h4>Compétences</h4></li>
+                <li><h4>Projets</h4></li>
+                <li><h4>Contact</h4></li>
             </ol>
         </nav>
-        <button aria-label="light mode" class="light-mode">
-            <span class="material-symbols-outlined" aria-hidden="true">
-                wb_sunny
-            </span>
-        </button>
+        <img class="logo-header flex-grow-1" src="./asset/lightbulb-solid.svg" alt="Lightbulb Logo">
     </header>
     <main>
-        {# Welcome #}
-        <section>
-            <h1>Bienvenue sur mon Portfolio</h1>
-            <h3>Apprenez à me connaître</h3>
+        <section class="main-section border-radius-50 border-2-dark-blue">
+            <h1 class="blur-section border-radius-25 border-2-dark-blue">Bienvenue sur mon Portfolio</h1>
+            <h3 class="blur-section border-radius-25 border-2-dark-blue">Apprenez à me connaître</h3>
         </section>
-        {# About me #}
-        <section>
-            <h2>À propos de moi</h2>
-            <div>
-                <img src="./asset/identity_picture.png" alt="Photo Nicolas Berlaud"/>
-                <nav>
-                    <ol>
-                        <li>Étudiant</li>
-                        <li>Designer</li>
-                        <li>Developpeur</li>
-                    </ol>
-                </nav>
-                <p>
-                    Étudiant en programation de 21 ans.
-                </p>
-                <h3>Nicolas Berlaud</h3>
-            </div>
-            <ul>
-                {# TODO: Ajouter la classe qui permet des contours blanc #}
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/graduation-cap-solid.svg" alt="Graduation cap logo">
-                    </div>
-                    <h4>Education</h4>
-                    <p>École ITIC Paris</p>
-                    <p>BTS Services Informatiques aux Organisations</p>
-                    <p>Option SLAM</p>
-                </li>
-                {# TODO: Ajouter la classe qui permet des contours blanc #}
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/trophy-solid.svg" alt="Trophy logo">
-                    </div>
-                    <h4>Compétences</h4>
-                    <p>PHP, Java, HTML, CSS, Javascript, C et Design</p>
-                </li>
-                {# TODO: Ajouter la classe qui permet des contours blanc #}
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/briefcase-solid.svg" alt="Trophy logo">
-                    </div>
-                    <h4>Experience</h4>
-                    <p>Alternance à Gest On Line</p>
-                </li>
-            </ul>
+        <section class="block">
+            <section class="section">
+                <h2 class="title">À propos de moi</h2>
+                <section class="content-container">
+                    <section class="summary">
+                        <img class="identity-picture" src="./asset/identity_picture.png" alt="Photo Nicolas Berlaud"/>
+                        <ul class="labels">
+                            <li>Étudiant</li>
+                            <li>Designer</li>
+                            <li>Developpeur</li>
+                        </ul>
+                        <p>
+                            Étudiant en programation de 21 ans.
+                        </p>
+                        <h3>Nicolas Berlaud</h3>
+                    </section>
+                    <ul class="about-me-content">
+                        <li class="info-content">
+                            <div class="info-content-logo">
+                                <img class="logo" src="./asset/graduation-cap-solid.svg" alt="Graduation cap logo">
+                            </div>
+                            <section class="info-content-text">
+                                <h4>Education</h4>
+                                <p>École ITIC Paris</p>
+                                <p>BTS Services Informatiques aux Organisations</p>
+                                <p>Option SLAM</p>
+                            </section>
+                        </li>
+                        <li class="info-content">
+                            <div class="info-content-logo">
+                                <img class="logo" src="./asset/trophy-solid.svg" alt="Trophy logo">
+                            </div>
+                            <section class="info-content-text">
+                                <h4>Compétences</h4>
+                                <p>PHP, Java, HTML, CSS, Javascript, C et Design</p>
+                            </section>
+                        </li>
+                        <li class="info-content">
+                            <div class="info-content-logo">
+                                <img class="logo" src="./asset/briefcase-solid.svg" alt="Trophy logo">
+                            </div>
+                            <section class="info-content-text">
+                                <h4>Experience</h4>
+                                <p>Alternance à Gest On Line</p>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+            </section>
         </section>
-        <section>
-            <h2>Compétences</h2>
-            <ul>
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/python.svg" alt="Python logo">
-                    </div>
-                    <h4>ISN</h4>
-                    {# TODO: Ajouter la classe pour la transparence #}
-                    <p>2018</p>
-                    <p>Python</p>
-                </li>
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/earth-americas-solid.svg" alt="Earthamericas logo">
-                    </div>
-                    <h4>Certification Cambridge</h4>
-                    {# TODO: Ajouter la classe pour la transparence #}
-                    <p>2019</p>
-                    <p>Niveau d’Anglais certifié Cambridge</p>
-                </li>
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/eseo_logo.svg" alt="ESEO logo">
-                    </div>
-                    <h4>ESEO</h4>
-                    {# TODO: Ajouter la classe pour la transparence #}
-                    <p>2019-2021</p>
-                    <p>Cursus International</p>
-                </li>
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/42_Logo.svg" alt="42 logo">
-                    </div>
-                    <h4>ESEO</h4>
-                    {# TODO: Ajouter la classe pour la transparence #}
-                    <p>2021-2022</p>
-                    <p>C & Shell</p>
-                </li>
-                <li>
-                    {# TODO: Ajouter la classe qui permet de faire un fond blanc #}
-                    <div>
-                        <img src="./asset/ITIC.svg" alt="ITIC logo">
-                    </div>
-                    <h4>ITIC</h4>
-                    {# TODO: Ajouter la classe pour la transparence #}
-                    <p>2022-2024</p>
-                    <p>Java, HTML, CSS & JavaScript</p>
-                </li>
-            </ul>
+        <section class="block">
+            <section class="section">
+                <h2 class="title">Compétences</h2>
+                <ul class="achievement-content-container">
+                    <li class="achievement-content">
+                        <svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="100" height="100" rx="50" fill="white"/>
+                            <path d="M78.9019 43.0664C77.8706 38.9281 75.9153 35.8077 71.7501 35.8077H66.3796V42.1557C66.3796 47.0841 62.201 51.2357 57.4331 51.2357H43.1296C39.2188 51.2357 35.9778 54.5838 35.9778 58.5078V72.1413C35.9778 76.0251 39.3528 78.3018 43.1296 79.4133C47.6563 80.7392 52.009 80.9803 57.4331 79.4133C61.0358 78.3687 64.5849 76.2661 64.5849 72.1413V66.6906H50.2947V64.8692H71.7501C75.9153 64.8692 77.4555 61.963 78.9019 57.6105C80.4019 53.1241 80.3349 48.8117 78.9019 43.0664ZM58.3305 70.3199C59.8171 70.3199 61.0224 71.5386 61.0224 73.0386C61.0224 74.5519 59.8171 75.7706 58.3305 75.7706C56.8572 75.7706 55.6385 74.5385 55.6385 73.0386C55.6519 71.5252 56.8572 70.3199 58.3305 70.3199ZM42.4733 49.4412H56.7769C60.7546 49.4412 63.9287 46.16 63.9287 42.1691V28.5222C63.9287 24.6384 60.6608 21.7323 56.7769 21.076C51.9822 20.2859 46.7724 20.3261 42.4733 21.0894C36.4197 22.1608 35.3215 24.3974 35.3215 28.5356V33.9863H49.6385V35.8077H29.951C25.7858 35.8077 22.143 38.3121 21.0046 43.0664C19.6921 48.5171 19.6385 51.9187 21.0046 57.6105C22.0224 61.8425 24.4465 64.8692 28.6117 64.8692H33.5269V58.3337C33.5269 53.6062 37.6117 49.4412 42.4733 49.4412ZM41.576 30.3436C40.0894 30.3436 38.884 29.1249 38.884 27.6249C38.8974 26.1116 40.0894 24.8929 41.576 24.8929C43.0492 24.8929 44.268 26.125 44.268 27.6249C44.268 29.1249 43.0626 30.3436 41.576 30.3436Z" fill="#152F46"/>
+                            </svg> 
+                        <h4>ISN</h4>
+                        <p class="text-50-alpha">2018</p>
+                        <p>Python</p>
+                    </li>
+                    <li class="achievement-content">
+                        <svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="100" height="100" rx="50" fill="white"/>
+                            <path d="M26.7617 43.1172L27.8633 45.0391C28.8359 46.7383 30.4297 47.9922 32.3164 48.5312L39.1016 50.4648C41.1172 51.0391 42.5 52.8789 42.5 54.9766V59.6523C42.5 60.9414 43.2266 62.1133 44.375 62.6875C45.5234 63.2617 46.25 64.4336 46.25 65.7227V70.293C46.25 72.1211 47.9961 73.4453 49.7539 72.9414C51.6406 72.4023 53.1055 70.8906 53.5859 68.9805L53.9141 67.668C54.4062 65.6875 55.6953 63.9883 57.4648 62.9805L58.4141 62.4414C60.1719 61.4453 61.25 59.5703 61.25 57.5547V56.582C61.25 55.0938 60.6523 53.6641 59.5977 52.6094L59.1406 52.1523C58.0859 51.0977 56.6562 50.5 55.168 50.5H50.1172C48.8164 50.5 47.5273 50.1602 46.3906 49.5156L42.3477 47.207C41.8438 46.9141 41.457 46.4453 41.2695 45.8945C40.8945 44.7695 41.3984 43.5508 42.4648 43.0234L43.1562 42.6719C43.9297 42.2852 44.832 42.2148 45.6523 42.4961L48.3711 43.3984C49.332 43.7148 50.3867 43.3516 50.9375 42.5195C51.4883 41.6992 51.4297 40.6094 50.7969 39.8477L49.2031 37.9375C48.0312 36.5312 48.043 34.4805 49.2383 33.0977L51.0781 30.9531C52.1094 29.7461 52.2734 28.0234 51.4883 26.6523L51.207 26.1602C50.7969 26.1367 50.3984 26.125 49.9883 26.125C39.1133 26.125 29.8906 33.2617 26.7617 43.1172ZM74.375 50.5C74.375 46.1875 73.25 42.1328 71.2812 38.6055L68.2812 39.8125C66.4414 40.5508 65.4922 42.6016 66.1133 44.4766L68.0938 50.418C68.5039 51.6367 69.5 52.5625 70.7422 52.8672L74.1523 53.7227C74.293 52.668 74.3633 51.5898 74.3633 50.5H74.375ZM20 50.5C20 42.5435 23.1607 34.9129 28.7868 29.2868C34.4129 23.6607 42.0435 20.5 50 20.5C57.9565 20.5 65.5871 23.6607 71.2132 29.2868C76.8393 34.9129 80 42.5435 80 50.5C80 58.4565 76.8393 66.0871 71.2132 71.7132C65.5871 77.3393 57.9565 80.5 50 80.5C42.0435 80.5 34.4129 77.3393 28.7868 71.7132C23.1607 66.0871 20 58.4565 20 50.5Z" fill="#152F46"/>
+                            </svg> 
+                        <h4>Certification Cambridge</h4>
+                        <p class="text-50-alpha">2019</p>
+                        <p>Niveau d’Anglais certifié Cambridge</p>
+                    </li>
+                    <li class="achievement-content">
+                        <div>
+                            <img class="logo" src="./asset/eseo_logo.svg" alt="ESEO logo">
+                        </div>
+                        <h4>ESEO</h4>
+                        <p class="text-50-alpha">2019-2021</p>
+                        <p>Cursus International</p>
+                    </li>
+                    <li class="achievement-content">
+                        <div>
+                            <img class="logo" src="./asset/42_Logo.svg" alt="42 logo">
+                        </div>
+                        <h4>ESEO</h4>
+                        <p class="text-50-alpha">2021-2022</p>
+                        <p>C & Shell</p>
+                    </li>
+                    <li class="achievement-content">
+                        <div>
+                            <img class="logo" src="./asset/ITIC.svg" alt="ITIC logo">
+                        </div>
+                        <h4>ITIC</h4>
+                        <p class="text-50-alpha">2022-2024</p>
+                        <p>Java, HTML, CSS & JavaScript</p>
+                    </li>
+                </ul>
+            </section>
         </section>
     </main>
     <footer></footer>
