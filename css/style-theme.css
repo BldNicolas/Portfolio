@@ -85,3 +85,12 @@ header {
     width: 17.5rem;
 }
 
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
