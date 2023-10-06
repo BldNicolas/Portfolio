@@ -43,3 +43,45 @@ button, input{
     --black-10-alpha: rgba(0, 0, 0, 0.1);
     --black-5-alpha: rgba(0, 0, 0, 0.05);
 }
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-blue);
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.logo-header {
+    width: 4rem;
+    height: 4rem;
+}
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+}
+.identity-picture {
+    width: 17.5rem;
+}
+
