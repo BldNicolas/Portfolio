@@ -142,10 +142,15 @@ main {
     gap: 2.4rem;
 }
 
-.labels {
+.labels-container {
     display: flex;
     align-items: center;
     gap: 0.6rem;
+}
+.label {
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+    background: var(--blue);
 }
 
 .about-me-content {
