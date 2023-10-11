@@ -4,6 +4,7 @@ html{
     font-size: 62.5%;
     font-family: 'League Spartan', sans-serif;
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 body{
     margin: 0;
@@ -91,8 +92,7 @@ main {
 
 footer {
     display: flex;
-    width: 100vw;
-    padding: 0.5rem;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -250,6 +250,31 @@ footer {
 
 .blur-section {
     filter: drop-shadow(0 0 10px var(--black));
+}
+
+/* SCROLL */
+
+.scroll-section {
+    display: flex;
+    overflow: auto;
+    outline: 1px dashed lightgray;
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: column nowrap;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-section > section {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+}
+
+.scroll-section > footer {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
 }
 
 /* TEXT STYLE */
