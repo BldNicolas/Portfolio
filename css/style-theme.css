@@ -3,7 +3,8 @@
 html{
     font-size: 62.5%;
     font-family: 'League Spartan', sans-serif;
-    }
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     line-height: 1.6;
