@@ -103,7 +103,7 @@ footer {
 
 /* SECTION */
 
-.main-section {
+.block-welcome {
     background: url(../asset/Background-welcome.png), lightgray 100% / cover no-repeat;
     height: 100rem;
     display: flex;
