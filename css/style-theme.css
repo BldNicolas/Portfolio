@@ -61,13 +61,12 @@ button, input{
 
 header {
     display: flex;
-    width: 192rem;
-    height: 8rem;
-    padding: 2rem;
+    width: 100vw;
+    padding: 0.5rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    position: absolute;
+    position: fixed;
     border-radius: 10px;
     border: 0.2rem solid var(--white);
     background: var(--dark-blue);
