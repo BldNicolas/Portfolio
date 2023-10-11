@@ -45,18 +45,6 @@ button, input{
     --black-5-alpha: rgba(0, 0, 0, 0.05);
 }
 
-.flex-grow-1 {
-    flex-grow: 1;
-}
-
-.flex-grow-2 {
-    flex-grow: 2;
-}
-
-.flex-grow-3 {
-    flex-grow: 3;
-}
-
 /* HEADER */
 
 header {
@@ -300,4 +288,18 @@ p {
 
 .text-50-alpha {
     color: var(--white-50-alpha, rgba(255, 255, 255, 0.50));
+}
+
+/* FLEX GROW */
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
 }
