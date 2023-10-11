@@ -200,8 +200,8 @@ main {
 
 .achievement-content-container {
     display: flex;
-    height: 33.6rem;
-    padding: 2rem 0rem;
+    height: 40rem;
+    padding: 1.5rem 0rem;
     justify-content: center;
     align-items: center;
     gap: 4rem; 
