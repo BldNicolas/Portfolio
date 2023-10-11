@@ -242,6 +242,10 @@ main {
     background-color: var(--white);
 }
 
+.blur-section {
+    filter: drop-shadow(0 0 10px var(--black));
+}
+
 /* TEXT STYLE */
 
 h1 {
