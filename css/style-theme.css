@@ -87,6 +87,20 @@ main {
     padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    width: 100vw;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--white);
+    background: var(--dark-blue);
+}
+
 /* SECTION */
 
 .main-section {
