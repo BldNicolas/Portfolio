@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "[Site](https://bldnicolas.github.io/Portfolio/)",
   "main": "index.js",
   "scripts": {
-    "build": "babel --no-babelrc src -w -d js --preset=env"
+    "build": "babel --no-babelrc js -w -d src --preset=env"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,7 @@
     "url": "https://github.com/BldNicolas/Portfolio/issues"
   },
   "homepage": "https://github.com/BldNicolas/Portfolio#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
   }
 }
