@@ -267,7 +267,7 @@ footer {
     scroll-padding-top: 5rem;
 }
 
-.scroll-section > section {
+.scroll-section > * {
     text-align: center;
     scroll-snap-align: center;
     flex: none;
