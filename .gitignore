@@ -2,4 +2,5 @@
 /src/
 # Ignore node_modules
 /node_modules/
-
+# Ignore les fichiers d'afffichage du finder
+.DS_Store
