@@ -10,11 +10,13 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="./css/style-theme.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <meta property="og:title" content="The Rock" />
     <meta property="og:type" content="video.movie" />
     <meta property="og:url" content="https://github.com/BldNicolas/Portfolio/" />
     <meta property="og:image" content="https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&dpr=1&w=1000" />
     <script src="https://kit.fontawesome.com/234a90ccd9.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <title>Portfolio</title>
 </head>
 <body class="mode-dark">
@@ -35,28 +37,28 @@
         <i class="fa-logo-header fa-regular fa-lightbulb flex-grow-1" style="color: var(--white);"></i>
     </header>
     <main class="scroll-section">
-        <section id="welcome" class="block-welcome">
+        <section id="welcome" class="welcome-section">
             <h1 class="blur-section">Bienvenue sur mon Portfolio</h1>
             <h3 class="blur-section">Apprenez à me connaître</h3>
         </section>
-        <div id="aboutMe" class="block" role="region">
-            <section class="section">
-                <h2 class="title">À propos de moi</h2>
-                <div class="content-container" role="region">
-                    <section class="summary">
-                        <img class="identity-picture" src="./asset/identity_picture.png" alt="Photo Nicolas Berlaud">
-                        <ul class="labels-container">
-                            <li class="label"><p>Étudiant</p></li>
-                            <li class="label"><p>Designer</p></li>
-                            <li class="label"><p>Developpeur</p></li>
-                        </ul>
-                        <p>
-                            Étudiant en programation de 21 ans.
-                        </p>
-                        <h3>Nicolas Berlaud</h3>
-                    </section>
-                    <ul class="about-me-content">
-                        <li class="info-content">
+        <div id="aboutMe" class="section" role="region">
+            <h2 class="title">À propos de moi</h2>
+            <div class="content-card-container" role="region">
+                <div class="content-container">
+                    <img class="identity-picture" src="./asset/identity_picture.png" alt="Photo Nicolas Berlaud">
+                    <ul class="labels-container">
+                        <li class="label"><p>Étudiant</p></li>
+                        <li class="label"><p>Designer</p></li>
+                        <li class="label"><p>Developpeur</p></li>
+                    </ul>
+                    <p>
+                        Étudiant en programation de 21 ans.
+                    </p>
+                    <h3>Nicolas Berlaud</h3>
+                </div>
+                <ul class="card-container">
+                    <li class="horizontal-card">
+                        <div class="horizontal-content">
                             <div class="info-content-logo">
                                 <i class="fa-logo fa-solid fa-graduation-cap" style="color: var(--blue);"></i>
                             </div>
@@ -66,8 +68,10 @@
                                 <p>BTS Services Informatiques aux Organisations</p>
                                 <p>Option SLAM</p>
                             </section>
-                        </li>
-                        <li class="info-content">
+                        </div>
+                    </li>
+                    <li class="horizontal-card">
+                        <div class="horizontal-content">
                             <div class="info-content-logo">
                                 <i class="fa-logo fa-solid fa-trophy" style="color: var(--blue);"></i>
                             </div>
@@ -75,8 +79,10 @@
                                 <h4>Compétences</h4>
                                 <p>PHP, Java, HTML, CSS, Javascript, C et Design</p>
                             </section>
-                        </li>
-                        <li class="info-content">
+                        </div>
+                    </li>
+                    <li class="horizontal-card">
+                        <div class="horizontal-content">
                             <div class="info-content-logo">
                                 <i class="fa-logo fa-solid fa-briefcase" style="color: var(--blue);"></i>
                             </div>
@@ -84,113 +90,155 @@
                                 <h4>Experience</h4>
                                 <p>Alternance à Gest On Line</p>
                             </section>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div id="achievement" class="block" role="region">
-            <section class="section">
-                <h2 class="title">Compétences</h2>
-                <div class="">
-                    <div class="">
-                        <ul class="achievement-content-container">
-                            <li class="achievement-content">
-                                <div class="circle-bg">
-                                    <i class="fa-logo fa-brands fa-python" style="color: var(--blue);"></i>
-                                </div>
-                                <h4>ISN</h4>
-                                <p class="text-50-alpha">2018</p>
-                                <p>Python</p>
-                            </li>
-                            <li class="achievement-content">
-                                <div class="circle-bg">
-                                    <img class="logo" src="./asset/cambridge.png" alt="Cambridge logo">
-                                </div>
-                                <h4>Certification Cambridge</h4>
-                                <p class="text-50-alpha">2019</p>
-                                <p>Niveau d’Anglais certifié Cambridge</p>
-                            </li>
-                            <li class="achievement-content">
-                                <div class="circle-bg">
-                                    <img class="logo" src="./asset/eseo_logo.svg" alt="ESEO logo">
-                                </div>
-                                <h4>ESEO</h4>
-                                <p class="text-50-alpha">2019-2021</p>
-                                <p>Cursus International</p>
-                            </li>
-                            <li class="achievement-content">
-                                <div class="circle-bg">
-                                    <img class="logo" src="./asset/42_Logo.svg" alt="42 logo">
-                                </div>
-                                <h4>ESEO</h4>
-                                <p class="text-50-alpha">2021-2022</p>
-                                <p>C & Shell</p>
-                            </li>
-                            <li class="achievement-content">
-                                <div class="circle-bg">
-                                    <img class="logo" src="./asset/ITIC.svg" alt="ITIC logo">
-                                </div>
-                                <h4>ITIC</h4>
-                                <p class="text-50-alpha">2022-2024</p>
-                                <p>Java, HTML, CSS & JavaScript</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="project" class="block" role="region">
-            <section class="section">
-                <h2 class="title">Projets</h2>
-                <ul class="achievement-content-container">
-                    <li class="achievement-content">
-                        <div class="circle-bg">
-                            <i class="fa-logo fa-brands fa-python" style="color: var(--blue);"></i>
                         </div>
-                        <h4>Daltonian-view</h4>
-                        <p class="text-50-alpha">2018</p>
-                        <p class="text-50-alpha">Python</p>
-                        <p>Manipulation d’image pour simuler la vue daltonienne</p>
-                    </li>
-                    <li class="achievement-content">
-                        <div class="circle-bg">
-                            <i class="fa-logo fa-solid fa-terminal" style="color: var(--blue);"></i>
-                        </div>
-                        <h4>Projet 42</h4>
-                        <p class="text-50-alpha">2021</p>
-                        <p class="text-50-alpha">C & Shell</p>
-                        <p>Travail effectué à 42</p>
-                    </li>
-                    <li class="achievement-content">
-                        <div class="circle-bg">
-                            <i class="fa-logo fa-brands fa-css3-alt" style="color: var(--blue);"></i>
-                        </div>
-                        <h4>Projet Batman</h4>
-                        <p class="text-50-alpha">2023</p>
-                        <p class="text-50-alpha">HTML & CSS</p>
-                        <p>Première manipulation HTML et CSS</p>
-                    </li>
-                    <li class="achievement-content">
-                        <div class="circle-bg">
-                            <i class="fa-logo fa-brands fa-html5" style="color: var(--blue);"></i>
-                        </div>
-                        <h4>Projet Superman</h4>
-                        <p class="text-50-alpha">2023</p>
-                        <p class="text-50-alpha">HTML & CSS</p>
-                        <p>Utilisation de classes et de la sémantique</p>
-                    </li>
-                    <li class="achievement-content">
-                        <div class="circle-bg">
-                            <i class="fa-logo fa-solid fa-recycle" style="color: var(--blue);"></i>
-                        </div>
-                        <h4>Projet Refonte</h4>
-                        <p class="text-50-alpha">2023</p>
-                        <p class="text-50-alpha">HTML & CSS</p>
-                        <p>Refactor sémantique</p>
                     </li>
                 </ul>
-            </section>
+            </div>
+        </div>
+        <div id="achievement" class="section" role="region">
+            <h2 class="title">Compétences</h2>
+            <div class="slider-container">
+                <div class="slider-1">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <i class="fa-logo fa-brands fa-python" style="color: var(--blue);"></i>
+                            </div>
+                            <h4>ISN</h4>
+                            <p class="text-50-alpha">2018</p>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <img class="logo" src="./asset/cambridge.png" alt="Cambridge logo">
+                            </div>
+                            <h4>Certification Cambridge</h4>
+                            <p class="text-50-alpha">2019</p>
+                            <p>Niveau d’Anglais certifié Cambridge</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <img class="logo" src="./asset/eseo_logo.svg" alt="ESEO logo">
+                            </div>
+                            <h4>ESEO</h4>
+                            <p class="text-50-alpha">2019-2021</p>
+                            <p>Cursus International</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <img class="logo" src="./asset/42_Logo.svg" alt="42 logo">
+                            </div>
+                            <h4>ESEO</h4>
+                            <p class="text-50-alpha">2021-2022</p>
+                            <p>C & Shell</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <img class="logo" src="./asset/ITIC.svg" alt="ITIC logo">
+                            </div>
+                            <h4>ITIC</h4>
+                            <p class="text-50-alpha">2022-2024</p>
+                            <p>Java, HTML, CSS & JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <img class="logo" src="./asset/ITIC.svg" alt="ITIC logo">
+                            </div>
+                            <h4>GestOnLine</h4>
+                            <p class="text-50-alpha">2023-2024</p>
+                            <p>PHP, Phalcon et SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="control" id="custom-control-1">
+                    <li class="prev">
+                        <i class="fas fa-angle-left fa-2x"></i>
+                    </li>
+                    <li class="next">
+                        <i class="fas fa-angle-right fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="project" class="section" role="region">
+            <h2 class="title">Projets</h2>
+            <div class="slider-container">
+                <div class="slider-2">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <i class="fa-logo fa-brands fa-python" style="color: var(--blue);"></i>
+                            </div>
+                            <h4>Daltonian-view</h4>
+                            <p class="text-50-alpha">2018</p>
+                            <p class="text-50-alpha">Python</p>
+                            <p>Manipulation d’image pour simuler la vue daltonienne</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <i class="fa-logo fa-solid fa-terminal" style="color: var(--blue);"></i>
+                            </div>
+                            <h4>Projet 42</h4>
+                            <p class="text-50-alpha">2021</p>
+                            <p class="text-50-alpha">C & Shell</p>
+                            <p>Travail effectué à 42</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <i class="fa-logo fa-brands fa-css3-alt" style="color: var(--blue);"></i>
+                            </div>
+                            <h4>Projet Batman</h4>
+                            <p class="text-50-alpha">2023</p>
+                            <p class="text-50-alpha">HTML & CSS</p>
+                            <p>Première manipulation HTML et CSS</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <i class="fa-logo fa-brands fa-html5" style="color: var(--blue);"></i>
+                            </div>
+                            <h4>Projet Superman</h4>
+                            <p class="text-50-alpha">2023</p>
+                            <p class="text-50-alpha">HTML & CSS</p>
+                            <p>Utilisation de classes et de la sémantique</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="circle-bg">
+                                <i class="fa-logo fa-solid fa-recycle" style="color: var(--blue);"></i>
+                            </div>
+                            <h4>Projet Refonte</h4>
+                            <p class="text-50-alpha">2023</p>
+                            <p class="text-50-alpha">HTML & CSS</p>
+                            <p>Refactor sémantique</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="control" id="custom-control-2">
+                    <li class="prev">
+                        <i class="fas fa-angle-left fa-2x"></i>
+                    </li>
+                    <li class="next">
+                        <i class="fas fa-angle-right fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
         <footer>
             <nav>
@@ -201,6 +249,7 @@
             </nav>
             <h4>2023</h4>
         </footer>
+        <script type="module" src="./js/tiny-slider.js"></script>
     </main>
 </body>
 </html>

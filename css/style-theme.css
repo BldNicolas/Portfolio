@@ -57,6 +57,7 @@ header {
     border-radius: 1rem;
     border: 0.2rem solid var(--white);
     background: var(--dark-blue);
+    z-index: 99999;
 }
 
 .nav-menu {
@@ -103,7 +104,7 @@ footer {
 
 /* SECTION */
 
-.block-welcome {
+.welcome-section {
     background: url(../asset/Background-welcome.png), lightgray 100% / cover no-repeat;
     height: 100rem;
     display: flex;
@@ -123,6 +124,8 @@ footer {
 }
 
 .section {
+    margin: 5% 10%;
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,14 +145,14 @@ footer {
     background: var(--blue); 
 }
 
-.content-container {
+.content-card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6rem; 
 }
 
-.summary {
+.content-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,23 +171,23 @@ footer {
     background: var(--blue);
 }
 
-.about-me-content {
+.card-container {
     display: flex;
-    width: 58.9rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
 }
 
-.info-content {
+.horizontal-content {
     display: flex;
     padding: 1.6rem;
     align-items: center;
     gap: 1.6rem;
     align-self: stretch;
     border-radius: 0.6rem;
-    border: 0.1rem solid var(--white); 
+    border: 0.1rem solid var(--white);
+    width: 58.9rem;
 }
 
 .info-content-logo {
@@ -216,7 +219,6 @@ footer {
 
 .achievement-content {
     display: flex;
-    width: 25rem;
     padding: 1.2rem 0rem;
     flex-direction: column;
     justify-content: center;
@@ -347,4 +349,69 @@ p {
 
 .flex-grow-3 {
     flex-grow: 3;
+}
+
+.basic-text{
+    color: white;
+    background-color: black;
+}
+
+.solid-border{
+    border: rgb(0, 0, 0) solid 1px;
+    
+}
+
+.slider-container{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--blue);
+    overflow: hidden;
+}
+
+.slide{
+    max-width: 300px;
+    aspect-ratio: 3/5;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: hidden;
+    background: var(--dark-blue);
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5),inset 0px 2px 2px rgba(255, 255, 255, 0.2);
+    cursor: grab;
+}
+
+.slide-content{
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    padding: 20px;
+}
+
+.control {
+    padding: 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 14px;
+}
+
+.control li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-blue);
+    padding: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(1);
 }
